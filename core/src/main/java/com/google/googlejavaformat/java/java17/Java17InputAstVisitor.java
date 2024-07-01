@@ -233,9 +233,9 @@ public class Java17InputAstVisitor extends JavaInputAstVisitor {
             ? plusFour
             : ZERO);
     if (isDefault) {
-      token("default", plusTwo);
+      token("default", ZERO);
     } else {
-      token("case", plusTwo);
+      token("case", ZERO);
       builder.open(labels.size() > 1 ? plusFour : ZERO);
       builder.space();
       boolean afterFirstToken = false;
